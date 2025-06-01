@@ -38,8 +38,8 @@ A：本模塊專為 OnePlus 13 設計，其他機型兼容性未知。
 
 ## 授權許可
 
-本項目採用 GPL-3.0 授權。
+本項目採用 GPL-3.0 授權
 
 ---
 
-歡迎提出 issue 或 pull request 以改進本模塊。
+歡迎提出 issue 或 pull request 以改進本模塊
