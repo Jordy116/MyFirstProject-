@@ -1,3 +1,4 @@
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 # OnePlus 13 Device Spoofing Magisk Module  
 *(适用于修改机型为 OnePlus 13 的 Magisk 模块)*  
 
