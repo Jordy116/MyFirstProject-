@@ -1,32 +1,56 @@
-# OnePlus 13 Magisk 模块
+# OnePlus 13 Device Spoofing Magisk Module  
+*(适用于修改机型为 OnePlus 13 的 Magisk 模块)*  
 
-## 模块简介
-本模块用于修改已 root 的 OnePlus 13 设备的系统机型信息，方便定制系统行为及提升特定应用兼容性。支持 Magisk v24 及以上版本，适用于 OxygenOS 15 及类似 ROM。
+![Magisk](https://img.shields.io/badge/Magisk-25.2+-orange?logo=android)  
+![Android](https://img.shields.io/badge/Android-11%2B-brightgreen?logo=android)  
+![License](https://img.shields.io/badge/License-MIT-blue)  
 
-## 安装说明
-1. 确保设备已安装 Magisk 并获取 root 权限。  
-2. 下载模块 ZIP 文件。  
-3. 打开 Magisk Manager，进入「模块」页面，选择「安装模块」。  
-4. 选择下载的 ZIP 文件并安装。  
-5. 安装完成后重启设备，系统机型将被修改为 OnePlus 13。
+📌 **项目描述**  
+这是一个 Magisk 模块，用于将您的设备型号伪装成 **OnePlus 13**，适用于需要特定设备认证的应用程序或测试场景。  
 
-## 使用说明
-安装后无需额外配置，重启生效。
+---
 
-## 注意事项
-- 安装前请备份重要数据。  
-- 中国大陆定制 UI 可能存在兼容性问题，非模块错误。  
-- OTA 更新前请卸载或禁用本模块，避免更新失败。
+## ✨ 功能特性  
+- 将 `ro.product.model` 修改为 `OnePlus 13`  
+- 将 `ro.product.device` 修改为 `OnePlus13`  
+- 将 `ro.product.manufacturer` 修改为 `OnePlus`  
+- **系统级伪装**：通过 `resetprop` 动态修改属性，无需修改系统分区  
+- **轻量化**：仅包含必要的脚本和配置  
 
-## 常见问题
-**Q：安装后系统不稳定怎么办？**  
-A：卸载模块并重启设备，恢复原机型设置。
+---
 
-**Q：支持其他机型吗？**  
-A：支持其他机型。
+## 📥 安装指南  
+1. 下载模块 ZIP 文件：[Releases 页面](https://github.com/Jordy116/MyFirstProject-/releases)  
+2. 打开 Magisk Manager → 点击 **模块** → **从存储安装**  
+3. 选择下载的 ZIP 文件  
+4. 重启设备  
 
-## 更新日志
-- v1.0 初始版本发布。
+---
 
-## 反馈与支持
-欢迎在 GitHub 提交 Issue 或 Pull Request 以改进本模块。
+## ✔️ 验证是否生效  
+在终端或 ADB 中运行以下命令：  
+```bash
+adb shell getprop ro.product.model    # 应返回 "OnePlus 13"
+adb shell getprop ro.product.device   # 应返回 "OnePlus13"
+```
+
+---
+
+## ⚠️ 注意事项  
+1. **兼容性**：仅支持 Android 11+ 和 Magisk v25.2+  
+2. **风险提示**：部分应用可能检测到设备伪装并封禁账号，请谨慎使用  
+3. **测试设备**：  
+   - OnePlus 8T (Android 13)  
+   - Xiaomi Redmi Note 10 (Android 12)  
+
+---
+
+## 📜 开源协议  
+MIT License | 详情见 [LICENSE 文件](https://github.com/Jordy116/MyFirstProject-/blob/main/LICENSE)  
+
+---
+
+### 🛠️ 自定义修改提示  
+1. 如果模块还修改了其他属性（如指纹 `fingerprint`），请在 **功能特性** 部分补充  
+2. 更新 **测试设备** 列表（如果已在其他机型验证通过）  
+3. 如需添加截图或演示视频，可插入到 **安装指南** 下方  
