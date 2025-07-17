@@ -1,4 +1,4 @@
-# OnePlus 13 Device Spoofing Magisk Module  
+# OnePlus 13 Device Spoofing Magisk Module 
 *(适用于修改机型为 OnePlus 13 的 Magisk 模块)*  
 
 ![Magisk](https://img.shields.io/badge/Magisk-25.2+-orange?logo=android)  
